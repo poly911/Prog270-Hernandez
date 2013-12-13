@@ -4,12 +4,12 @@
 /* jshint browser: true, devel: true, node: true, unused: true */
 
 var AWS = require('aws-sdk');
-var config = AWS.config.loadFromPath('/src/Config/config.json');
+var config = AWS.config.loadFromPath('config.json');
 var s3 = new AWS.S3();
 var fs = require('fs');
 var walk = require('walk');
 
-var bucketName = 'bucket02.elvenware.com';
+var bucketName = 'prog270.poly911.com';
 
 function listBuckets(s3) {
 	console.log("calling listBuckets");
